@@ -24,8 +24,8 @@ Launch program with 'ruby 00_journalists.rb'.
 Launch program with 'ruby 01_cryptocurrencies.rb'.
 
 ## Menu
- - 1 - Liste decroissante
- - 2 - Liste croissante
+ - 1 - Plus grosse value
+ - 2 - Plus petite value
  - 3 - Liste des crypto inferieures à 6000
  - 4 - La crypto la plus chere et inferieures à 6000
  - 5 - Exit

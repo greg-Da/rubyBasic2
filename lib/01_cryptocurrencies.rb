@@ -6,13 +6,13 @@ coins =  ["6558.07", "468.95", "0.487526", "762.84", "8.86", "85.26", "0.151268"
 
 $hash = Hash[names.zip(coins)]
 
-def list_decreasing
-    puts $hash.sort_by{|key, value| value.to_f}.reverse.to_h
+def biggest_value
+    puts [$hash.group_by{|key, value| value.to_f}.max].to_h
     perform
 end
 
-def list_increasing
-    puts $hash.sort_by{|key, value| value.to_f}.to_h
+def smallest_value
+    puts [$hash.group_by{|key, value| value.to_f}.min].to_h
     perform
 end
 
@@ -42,8 +42,8 @@ end
         puts ' '
         puts 'Entrez le chiffre de l exercise à voir'
         
-        puts '1 - Liste decroissante'
-        puts '2 - Liste croissante'
+        puts '1 - Plus grosse value'
+        puts '2 - Plus petite value'
         puts '3 - Liste des crypto inferieures à 6000'
         puts '4 - La crypto la plus chere et inferieures à 6000'
         puts '5 - Exit'
@@ -53,9 +53,9 @@ end
         
         case input
         when 1
-            list_decreasing
+            biggest_value
         when 2
-            list_increasing
+            smallest_value
         when 3
             list_below_6000
         when 4
