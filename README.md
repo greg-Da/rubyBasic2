@@ -2,7 +2,7 @@
 
 Clone the repository and go to the 'lib' directory.
 A menu will pop-up, choose the exercise you want by its number, it will launch the method and loop back to the menu.
-If you want to exit, the program choose the 'Exit' option.
+If you want to exit the program, choose the 'Exit' option.
 
 # 00_journalists.rb
 
